@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.sodiqjon.simpletestapp.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.sodiqjon.simpletestapp.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_numberFragment"
+            app:destination="@id/numberFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_cardFragment"
+            app:destination="@id/cardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardFragment"
+        android:name="com.sodiqjon.simpletestapp.CardFragment"
+        android:label="fragment_card"
+        tools:layout="@layout/fragment_card">
+        <action
+            android:id="@+id/action_cardFragment_to_welcomeSuccessFragment"
+            app:destination="@id/welcomeSuccessFragment" />
+        <action
+            android:id="@+id/action_cardFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_cardFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/numberFragment"
+        android:name="com.sodiqjon.simpletestapp.NumberFragment"
+        android:label="fragment_number"
+        tools:layout="@layout/fragment_number">
+        <action
+            android:id="@+id/action_numberFragment_to_welcomeSuccessFragment"
+            app:destination="@id/welcomeSuccessFragment" />
+        <action
+            android:id="@+id/action_numberFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeSuccessFragment"
+        android:name="com.sodiqjon.simpletestapp.WelcomeSuccessFragment"
+        android:label="fragment_welcome_success"
+        tools:layout="@layout/fragment_welcome_success">
+        <action
+            android:id="@+id/action_welcomeSuccessFragment_to_checkOutFtragment"
+            app:destination="@id/checkOutFtragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkOutFtragment"
+        android:name="com.sodiqjon.simpletestapp.CheckOutFtragment"
+        android:label="fragment_check_out_ftragment"
+        tools:layout="@layout/fragment_check_out_ftragment">
+        <action
+            android:id="@+id/action_checkOutFtragment_to_numberFragment"
+            app:destination="@id/numberFragment" />
+        <action
+            android:id="@+id/action_checkOutFtragment_to_cardFragment"
+            app:destination="@id/cardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.sodiqjon.simpletestapp.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+</navigation>
