@@ -25,26 +25,29 @@ class NumberFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        address = arguments?.getString("address").toString()
+
 
         binding.btnNext.setOnClickListener {
-            if (address.equals("checkIn")) {
-                findNavController().navigate(R.id.action_numberFragment_to_welcomeSuccessFragment)
 
-            } else {
-                findNavController().navigate(R.id.action_numberFragment_to_resultFragment)
-                Toast.makeText(requireContext(), "Check Out Successfully", Toast.LENGTH_SHORT)
+            if (binding.editTextNumber.text.isNullOrBlank()) {
+                Toast.makeText(
+                    requireContext(),
+                    "Please enter valid number min 12",
+                    Toast.LENGTH_SHORT
+                )
                     .show()
+            } else {
+                if (address.equals("checkIn")) {
+                    findNavController().navigate(R.id.action_numberFragment_to_welcomeSuccessFragment)
 
+                } else {
+                    findNavController().navigate(R.id.action_numberFragment_to_resultFragment)
+                    Toast.makeText(requireContext(), "Check Out Successfully", Toast.LENGTH_SHORT)
+                        .show()
+
+                }
             }
-//            if (binding.editTextNumber.textSize < 12) {
-//                Toast.makeText(
-//                    requireContext(),
-//                    "Please enter valid number\nMinimum number size 12",
-//                    Toast.LENGTH_SHORT
-//                ).show()
-//            } else {
-//                findNavController().navigate(R.id.action_numberFragment_to_welcomeSuccessFragment)
-//            }
         }
 
     }
