@@ -1,4 +1,4 @@
-package com.sodiqjon.simpletestapp
+package com.sodiqjon.simpletestapp.di
 
 import android.app.Application
 import com.orhanobut.hawk.Hawk

@@ -1,9 +1,10 @@
-package com.sodiqjon.simpletestapp
+package com.sodiqjon.simpletestapp.viewmodel
 
 import android.content.ContentValues.TAG
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.sodiqjon.simpletestapp.model.UserModel
 import io.realm.Realm
 import java.util.UUID
 
@@ -36,7 +37,7 @@ class UserViewModel : ViewModel() {
 
     fun getUser() {
         val users = realm.where(UserModel::class.java).findAll()
-        allUser.value=realm.copyFromRealm(users)
+        allUser.value = realm.copyFromRealm(users)
 
     }
 }

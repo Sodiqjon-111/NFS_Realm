@@ -1,4 +1,4 @@
-package com.sodiqjon.simpletestapp
+package com.sodiqjon.simpletestapp.ui
 
 import android.os.Build
 import android.os.Bundle
@@ -11,8 +11,9 @@ import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.orhanobut.hawk.Hawk
+import com.sodiqjon.simpletestapp.R
+import com.sodiqjon.simpletestapp.viewmodel.UserViewModel
 import com.sodiqjon.simpletestapp.databinding.FragmentResultBinding
-import com.sodiqjon.simpletestapp.databinding.FragmentSignInBinding
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 

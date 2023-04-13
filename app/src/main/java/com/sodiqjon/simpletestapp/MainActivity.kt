@@ -3,6 +3,7 @@ package com.sodiqjon.simpletestapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.sodiqjon.simpletestapp.databinding.ActivityMainBinding
+import com.sodiqjon.simpletestapp.viewmodel.UserViewModel
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

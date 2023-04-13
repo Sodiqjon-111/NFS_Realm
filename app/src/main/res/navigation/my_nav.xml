@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.sodiqjon.simpletestapp.SignInFragment"
+        android:name="com.sodiqjon.simpletestapp.ui.SignInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in">
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/cardFragment"
-        android:name="com.sodiqjon.simpletestapp.CardFragment"
+        android:name="com.sodiqjon.simpletestapp.ui.CardFragment"
         android:label="fragment_card"
         tools:layout="@layout/fragment_card">
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/numberFragment"
-        android:name="com.sodiqjon.simpletestapp.NumberFragment"
+        android:name="com.sodiqjon.simpletestapp.ui.NumberFragment"
         android:label="fragment_number"
         tools:layout="@layout/fragment_number">
         <action
@@ -55,7 +55,7 @@
     </fragment>
     <fragment
         android:id="@+id/welcomeSuccessFragment"
-        android:name="com.sodiqjon.simpletestapp.WelcomeSuccessFragment"
+        android:name="com.sodiqjon.simpletestapp.ui.WelcomeSuccessFragment"
         android:label="fragment_welcome_success"
         tools:layout="@layout/fragment_welcome_success">
         <action
@@ -64,7 +64,7 @@
     </fragment>
     <fragment
         android:id="@+id/checkOutFtragment"
-        android:name="com.sodiqjon.simpletestapp.CheckOutFtragment"
+        android:name="com.sodiqjon.simpletestapp.ui.CheckOutFtragment"
         android:label="fragment_check_out_ftragment"
         tools:layout="@layout/fragment_check_out_ftragment">
         <action
@@ -76,7 +76,7 @@
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
-        android:name="com.sodiqjon.simpletestapp.ResultFragment"
+        android:name="com.sodiqjon.simpletestapp.ui.ResultFragment"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
         <action

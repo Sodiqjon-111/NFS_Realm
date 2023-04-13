@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".SignInFragment">
+    tools:context=".ui.SignInFragment">
 
     <TextView
         style="@style/ShapeAppearance.Material3.Tooltip"

@@ -1,4 +1,4 @@
-package com.sodiqjon.simpletestapp
+package com.sodiqjon.simpletestapp.model
 
 
 import io.realm.RealmModel

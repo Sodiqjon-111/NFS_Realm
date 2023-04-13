@@ -6,7 +6,7 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".NumberFragment">
+    tools:context=".ui.NumberFragment">
 
     <EditText
         android:id="@+id/editTextNumber"
