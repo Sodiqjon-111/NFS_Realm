@@ -52,10 +52,10 @@ class ResultFragment : Fragment() {
 
         viewModel.allUser.observe(requireActivity()) {
             Toast.makeText(requireContext(), "Your data is saved", Toast.LENGTH_SHORT).show()
-            binding.checkOutDateText.text = it.first().dateOut
-            binding.checkOutTimeText.text = it.first().timeOut
-            binding.checkInDateText.text = it.first().dateIn
-            binding.checkInTimeText.text = it.first().timeIn
+            binding.checkOutDateText.text = it.last().dateOut
+            binding.checkOutTimeText.text = it.last().timeOut
+            binding.checkInDateText.text = it.last().dateIn
+            binding.checkInTimeText.text = it.last().timeIn
 
         }
 
